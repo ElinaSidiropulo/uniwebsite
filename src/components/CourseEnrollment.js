@@ -21,7 +21,7 @@ function CourseEnrollment() {
         <section id="enrollment" className="sec-enrollment py-12 bg-gray-100 text-center">
             <div className="container mx-auto px-4">
                 <h1 className="text-4xl font-bold mb-6">Course Enrollment</h1>
-                <hr className="border-t-2 border-gray-300 mb-8" />
+                <div className="mb-4"/>
                 <div className="flex flex-col items-center">
                     <input
                         type="text"
@@ -39,10 +39,10 @@ function CourseEnrollment() {
                     <ul className="student-list">
                         {students.map(id => (
                             <li key={id} className="flex items-center justify-between border p-2 rounded shadow">
-                                <span>Student ID: {id}</span>
+                                <span className="mr-4">Student ID: {id}</span> {/* Добавляем отступ справа */}
                                 <button
                                     onClick={() => handleRemoveStudent(id)}
-                                    className="ml-4 btn btn-danger"
+                                    className="btn btn-danger"
                                 >
                                     Remove
                                 </button>

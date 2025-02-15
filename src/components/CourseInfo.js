@@ -6,7 +6,7 @@ function CourseInfo({ courseName }) {
         <section id="course-info" className="sec-course py-12 bg-light text-center">
             <div className="container mx-auto px-4">
                 <h1 className="text-4xl font-bold mb-6">Course Information</h1>
-                <hr className="border-t-2 border-gray-300 mb-8" />
+                <div className="mb-4"/>
                 <div className="flex justify-center">
                     <div className="max-w-xl">
                         <h2 className="text-2xl font-semibold mb-4">{courseName}</h2>

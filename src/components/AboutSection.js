@@ -5,7 +5,7 @@ function AboutSection() {
         <section id="about" className="sec-about py-12 bg-gray-100 text-center">
             <div className="container mx-auto px-4">
                 <h1 className="text-4xl font-bold mb-6">About the University</h1>
-                <hr className="border-t-2 border-gray-300 mb-8" />
+                <div className="mb-4"/>
                 <div className="flex justify-center">
                     <div className="max-w-xl">
                         <p className="text-lg leading-relaxed text-gray-700">

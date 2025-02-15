@@ -6,7 +6,6 @@ import ServicesSection from './components/ServicesSection';
 import CourseInfo from './components/CourseInfo';
 import FolioSection from './components/FolioSection';
 import TestimonialsSection from './components/TestimonialsSection';
-import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -23,7 +22,6 @@ function App() {
           <CourseEnrollment />
         <FolioSection />
         <TestimonialsSection />
-        <ContactSection />
         <FooterSection />
       </div>
   );

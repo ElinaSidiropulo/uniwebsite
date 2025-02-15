@@ -1,9 +1,4 @@
 
-/* Variables (replaced with actual values) */
-:root {
-    --bl: #AAD6F4;
-}
-
 /* Typography */
 html {
     font-size: 16px;
@@ -13,9 +8,8 @@ body {
     font-family: 'Open sans', sans-serif;
     font-weight: bold;
 }
-header {
-    background-color: #7A8C99;
-}
+
+
 .navbar a,
 .sec-about p {
     text-align: center;
@@ -37,8 +31,8 @@ header {
 }
 
 .container > h1 {
-    font-weight: 300;
     text-align: center;
+    font-weight: 400;
 }
 
 p {
@@ -58,10 +52,6 @@ p {
 
 .sec-testimonials p {
     font-style: italic;
-}
-
-.sec-contact .btn {
-    text-transform: uppercase;
 }
 
 .soc-media-ul a {
@@ -104,21 +94,9 @@ hr {
     border-color: black;
 }
 
-/* Layout */
-.sec-folio {
-    background-color: #C9D6DF;
-}
-.sec-folio .row {
-    margin-bottom: 3em;
-}
-
-.sec-folio img {
-    max-width: 100%;
-}
-
 /* Header */
 .navbar-default {
-    background-color: #6C8199;
+    background-color: black;
     border: 0;
     color: white;
 }
@@ -127,14 +105,6 @@ hr {
     vertical-align: top;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: var(--bl);
-}
-
-.navbar-default .navbar-nav > li > a:active {
-    color: #AAD6F4; /* Darken function replacement */
-}
 
 .collapse .navbar-collapse {
     color: white;
@@ -144,7 +114,7 @@ hr {
 .sec-main {
     position: relative;
     height: 560px;
-    background: url(https://tengrinews.kz/userdata/u38/2021-07/resize/8722b86a0f534d0b0c37daad85d046e4.png) no-repeat center center;
+    background: url(https://iitu.edu.kz/media/images/IMG_5396-2.original.format-jpeg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -171,21 +141,16 @@ hr {
     color: #fff;
 }
 .sec-about {
-    background-color: #C9D6DF;
+    background-color: #d9c5c7;
 }
 /* About */
 .sec-about a {
     color: #000;
 }
 
-.sec-about a:hover,
-.sec-about a:focus {
-    color: var(--bl);
-}
-
 /* Services */
 .sec-services {
-    background: #BECED8;
+    background: #ebdddd;
 }
 
 .sec-services i {
@@ -208,35 +173,13 @@ hr {
 
 /* Testimonials */
 .sec-testimonials {
-    background: #BECED8;
+    background: #d9c5c7;
 }
 
-/* Contact */
-.sec-contact {
-    background-color: #C9D6DF;
-}
-.sec-contact .form-control:focus {
-    border-color: var(--bl);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
-}
-
-.sec-contact .btn {
-    padding: 0.5rem 1.75rem;
-    background: #96A8B6;
-    font-size: 0.95rem;
-    color: #fff;
-    transition: all 0.25s;
-}
-
-.sec-contact .btn:hover,
-.sec-contact .btn:focus {
-    background: var(--bl);
-    border-color: #AAD6F4; /* Darken function replacement */
-}
 
 /* Footer */
 footer {
-    background: #6C8199;
+    background: #87353a;
 }
 
 .soc-media-ul {
@@ -258,16 +201,9 @@ footer {
     transition: all 0.25s;
 }
 
-.soc-media-ul a:hover,
-.soc-media-ul a:focus {
-    color: var(--bl);
-}
 
 .navbar-default .navbar-nav>li>a {
     color: white;
-}
-.navbar-default .navbar-brand {
-    color: #C9D6DF;
 }
 
 .navbar-default .navbar-toggle .icon-bar{
@@ -285,15 +221,58 @@ footer {
 }
 
 @media (min-width: 640px) {
-    /* Планшеты: две колонки */
     .student-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
-    /* ПК: три колонки */
     .student-list {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.navbar.navbar-expand-lg {
+    background-color: #87353a !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link, .navbar-toggle {
+    color: white !important;
+    font-weight: bold;
+}
+
+.main-heading {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Чтобы изменить цвет иконки */
+}
+
+#folio {
+    background-color: #f7f0f0;
+}
+
+.bg-light {
+    background-color: #f7f0f0;
+}
+
+p {
+    color: #87353a;
+}
+
+
+.btn-primary, .btn-danger {
+    background-color: #c97373 !important;
+    color: white !important;
+    font-weight: bold;
+    border: 0;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #b55757 !important;
 }
